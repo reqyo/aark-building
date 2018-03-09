@@ -68,6 +68,9 @@
   max-height: 300px;
   width: auto;
 }
+.thinlink {
+  font-weight: 200;
+}
 .top-buffer {
   margin-top: 40px;
 }
