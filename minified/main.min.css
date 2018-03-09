@@ -1,0 +1,6 @@
+/**
+ * aark-site v1.0.0
+ * dans dad website
+ *  <>
+ */
+.box-for-carousel,.nav{z-index:999;background-color:rgba(0,0,0,.8)}.box-for-carousel h1,.box-for-carousel p,.inside-nav li{font-family:Lato,sans-serif}.logo{display:inline-block}.logo img{height:45px;margin-top:8px}.nav{height:64px;padding-top:0}.inside-nav{list-style-type:none;float:right;vertical-align:middle;margin-right:20px}.inside-nav li{float:left;margin-right:15px;margin-left:15px;font-weight:300;font-size:14pt}.inside-nav li a{color:#fff;line-height:59px}#myCarousel{top:-67px}.box-for-carousel{height:196px;width:60%;text-align:center;position:absolute;right:20%;left:20%;margin-top:300px}.box-for-carousel h1{font-weight:400;color:#fff}.box-for-carousel p{font-weight:300;margin-left:5%;margin-right:5%;color:#fff}

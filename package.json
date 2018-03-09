@@ -1,0 +1,23 @@
+{
+  "name": "Aark Limited",
+  "version": "1.0.0",
+  "description": "Created by thecreative.london. All rights reserved.",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch-less": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "gulp": "^3.9.1",
+    "gulp-header": "^1.8.8",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch-less": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zakariah Drummond",
+  "license": "ISC"
+}
