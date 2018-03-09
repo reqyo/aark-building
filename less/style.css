@@ -64,6 +64,13 @@
   height: 1080px;
   overflow: hidden;
 }
+.preview-images .something {
+  max-height: 300px;
+  width: auto;
+}
+.top-buffer {
+  margin-top: 40px;
+}
 .box-for-carousel {
   height: auto;
   padding-bottom: 50px;
