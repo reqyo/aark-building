@@ -1,7 +1,7 @@
 {
   "name": "Aark Limited",
   "version": "1.0.0",
-  "description": "Created by thecreative.london. All rights reserved.",
+  "description": "Created by studio17.co.uk. All rights reserved.",
   "main": "index.js",
   "dependencies": {
     "gulp": "^3.9.1",
