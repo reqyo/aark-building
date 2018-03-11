@@ -56,7 +56,7 @@
   height: 100vh;
 }
 .carousel-inner .item .picture3 {
-  background-image: url(../images/chicago.jpg);
+  background-image: url(../images/chicago.jpeg);
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -125,4 +125,14 @@ u {
 .about img {
   width: auto;
   height: 200px;
+}
+.dark-bg {
+  background-color: #333333;
+}
+.dark-bg h2 {
+  color: white;
+  font-weight: 200;
+}
+.dark-bg p {
+  color: white;
 }
