@@ -28,7 +28,7 @@
 
       <div class="col-sm-8 col-md-11 hidden-xs">
         <ul class="inside-nav">
-          <li class="align-middle"><a href="#">about</a></li>
+          <li class="align-middle"><a href="#about">about</a></li>
           <li><a href="#">our work</a></li>
           <li><a href="#">contact</a></li>
           <li><a href="#">get an invoice</a></li>
@@ -96,7 +96,7 @@
   <div class="row">
   <section class="about text-center">
 
-    <h2>About us & What we do</h2>
+    <h2 id="about">About us & What we do</h2>
     <p class="col-sm-8 col-sm-offset-2 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -143,10 +143,9 @@
        <div class="row">
           <div class="col-sm-6">
             <div class="row">
-              <div class="col-sm-3">
-                  <img class="image-responsive" width="100%" src="images/something.jpeg">
-                </div>
-                <div class="col-sm-9">
+              <div class="col-sm-12">
+                  <img class="image-responsive pull-left" width="100%" src="images/jordan.png">
+                  <h4>Jordan Gilchrist</h4>
                   <p>This is some text. Lallalallaaal ladbdfk kfjf sf hhd jh fsdhh hf sfds hsjhf sdjf sjfsdjfh sjfhsfhsdh  shfsdjhf sjdfhsjdhf kjsdfh skjdh §fh  dfhs dhfdjfh jh jdfhsjdfh j</p>
                 </div>
               </div>
@@ -155,10 +154,9 @@
 
             <div class="col-sm-6">
                 <div class="row">
-                  <div class="col-sm-3">
-                      <img class="image-responsive" width="100%" src="images/something.jpeg">
-                    </div>
-                    <div class="col-sm-9">
+                  <div class="col-sm-12">
+                      <img class="image-responsive pull-left" width="100%" src="images/dan.png">
+                      <h4>Dan Campen</h4>
                         <p>This is some text. Lallalallaaal ladbdfk kfjf sf hhd jh fsdhh hf sfds hsjhf sdjf sjfsdjfh sjfhsfhsdh  shfsdjhf sjdfhsjdhf kjsdfh skjdh §fh  dfhs dhfdjfh jh jdfhsjdfh j</p>
                     </div>
                   </div>
@@ -169,10 +167,9 @@
        <div class="row">
           <div class="col-sm-6">
             <div class="row">
-              <div class="col-sm-3">
-                  <img class="image-responsive" width="100%" src="images/something.jpeg">
-                </div>
-                <div class="col-sm-9">
+              <div class="col-sm-12">
+                  <img class="image-responsive pull-left" width="100%" src="images/jj.png">
+                  <h4>Jj Merison</h4>
                   <p>This is some text. Lallalallaaal ladbdfk kfjf sf hhd jh fsdhh hf sfds hsjhf sdjf sjfsdjfh sjfhsfhsdh  shfsdjhf sjdfhsjdhf kjsdfh skjdh §fh  dfhs dhfdjfh jh jdfhsjdfh j</p>
                 </div>
               </div>
@@ -181,12 +178,12 @@
 
             <div class="col-sm-6">
                 <div class="row">
-                  <div class="col-sm-3">
-                      <img class="image-responsive" width="100%" src="images/something.jpeg">
+                  <div class="col-sm-12">
+                      <img class="image-responsive pull-left" width="100%" src="images/kieran.png">
+                      <h4>Kieran Williams</h4>
+                      <p>This is some text. Lallalallaaal ladbdfk kfjf sf hhd jh fsdhh hf sfds hsjhf sdjf sjfsdjfh sjfhsfhsdh  shfsdjhf sjdfhsjdhf kjsdfh skjdh §fh  dfhs dhfdjfh jh jdfhsjdfh j</p>
                     </div>
-                    <div class="col-sm-9">
-                        <p>This is some text. Lallalallaaal ladbdfk kfjf sf hhd jh fsdhh hf sfds hsjhf sdjf sjfsdjfh sjfhsfhsdh  shfsdjhf sjdfhsjdhf kjsdfh skjdh §fh  dfhs dhfdjfh jh jdfhsjdfh j</p>
-                    </div>
+
                   </div>
                 </div>
 
@@ -202,6 +199,41 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="bootstrap/dist/js/bootstrap.js">
   </script>
+  <script>$('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function(event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+          && 
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+      });</script>
 
 </body>
 

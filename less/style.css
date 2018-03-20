@@ -1,6 +1,6 @@
 /**
  * Aark Limited v1.0.0
- * Created by thecreative.london. All rights reserved.
+ * Created by studio17.co.uk. All rights reserved.
  *  <>
  */
 .logo {
@@ -135,4 +135,13 @@ u {
 }
 .dark-bg p {
   color: white;
+}
+.dark-bg h4 {
+  color: white;
+}
+.dark-bg img {
+  width: auto;
+  height: 100px;
+  padding-right: 15px;
+  margin-bottom: 25px;
 }
