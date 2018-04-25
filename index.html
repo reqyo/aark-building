@@ -13,7 +13,23 @@
 
   <title>Aark Building & Design</title>
 
-
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#237afc"
+      },
+      "button": {
+        "background": "transparent",
+        "text": "#fff",
+        "border": "#fff"
+      }
+    }
+  })});
+  </script>
 </head>
 
 <body>
@@ -81,20 +97,17 @@
 
 
       <div class="item active">
-        <!-- <img src="images/chicago.jpg" alt="Los Angeles"> -->
         <div class="picture1"></div>
 
       </div>
 
       <div class="item">
           <div class="picture2"></div>
-        <!-- <img src="images/chicago.jpg" alt="Chicago"> -->
 
       </div>
 
       <div class="item">
           <div class="picture3"></div>
-        <!-- <img src="images/chicago.jpg" alt="New York"> -->
       </div>
     </div>
 
@@ -237,9 +250,16 @@
               <select class="form-control" id="select" style="color:gray">
                 
                 <option value="" disabled selected>Trade</option>
-                <option>Building</option>
-                <option>Decorating</option>
+                <option>Structural Alterations</option>
+                <option>Loft conversions</option>
+                <option>Extensions</option>
+                <option>Bathrooms</option>
+                <option>Carpentry Work</option>
+                <option>Tiling</option>
+                <option>Driveways/Patio</option>
+                <option>Roofing</option>
                 <option>Plastering</option>
+                <option>Brickwork</option>
               </select>
             </div>
             </div>
