@@ -7,9 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" href="less/style.css" />
+  <link rel="stylesheet" type="text/css" href="minified/main.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
-
+  <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
 
   <title>Aark Building & Design</title>
 
@@ -20,10 +20,10 @@
 
 
   <section class="container-fluid">
-    <nav class="row nav navbar-fixed-top">
+    <nav class="row nav navbar-fixed-top navbar-inverse">
 
-      <div class="col-sm-4 col-md-1 col-xs-6 logo">
-        <img src="images/aark-logo.svg" alt="Aark" />
+      <div class="col-sm-4 col-md-1 col-xs-4 logo">
+        <img src="images/aark-logo-2.svg" alt="Aark" />
       </div>
 
       <div class="col-sm-8 col-md-11 hidden-xs">
@@ -32,9 +32,26 @@
           <li><a href="#our-work">our work</a></li>
           <li><a href="#contact">contact</a></li>
           <li><a href="#">get an invoice</a></li>
-
         </ul>
+      </div>      
+      <div class="mobile-nav hidden-sm hidden-md hidden-lg col-xs-8">
 
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+
+
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#our-work">our work</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#">get an invoice</a></li>
+                </ul>
+              </div>
 
       </div>
     </nav>
@@ -204,7 +221,7 @@
 
 
           
-          <form class="form-horizontal" action="/action_page.php">
+          <form class="form-horizontal" action="/something">
             <div class="form-group">
               <div class="col-md-6 col-md-offset-3">
                 <input type="name" class="form-control" id="name" placeholder="Full name">
@@ -219,7 +236,7 @@
               <div class="col-md-6 col-md-offset-3"> 
               <select class="form-control" id="select" style="color:gray">
                 
-                <option value="" disabled selected>Select your option</option>
+                <option value="" disabled selected>Trade</option>
                 <option>Building</option>
                 <option>Decorating</option>
                 <option>Plastering</option>
@@ -239,28 +256,63 @@
               </div>
             </div>
           </form>
+          <p class="col-md-6 col-md-offset-3">Or if you prefer, you can <a>email us here.</a></p>
       </div>
+    
+      <footer class="container-fluid dark-bg" id="footer">
+        <div class="row row-centered social-media">
+          <div class="col-12 col-centered row-spacer">
+          <img class="social col-md-4" src="images/insta.png"/>
+            <img class="social col-md-4" src="images/facebook.png"/>
+              <img class="social col-md-4" src="images/twitter.png"/>
+            </div>
+          </div>
+
+
+              <div class="row row-centered end-link">
+                  <div class="col-12 col-centered top-buffer">
+                  <a href="#about" class="col-md-6">Sitemap</a>
+                  <a href="#about" class="col-md-6">Jobs</a>
+    
+                    </div>
+                  </div>
+                  <div class="row">
+                      <h2 class="text-center">Aark Limited</h2></div>
+                      <div class="row">
+                          <p class="text-center">All rights reserved</p></div>
+                          <p class="text-center">Reg No. 3782423764823</p></div>
+                          <p class="text-center">Made with <i class="icon ion-heart"></i> by six</p>
+
+      </footer>
     
 
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="bootstrap/dist/js/bootstrap.js"></script>
-  <script src="./formPosition.js"/></script>
   </script>
   <script>
     $(document).ready(function() {
-   $('#select').css('color','gray');
+   $('#select').css('color','#ccc');
    $('#select').change(function() {
       var current = $('#select').val();
       if (current != 'null') {
           $('#select').css('color','white');
       } else {
-          $('#select').css('color','gray');
+          $('#select').css('color','#ccc');
       }
    }); 
 });
   </script>
+
+
+<script> $(function(){ 
+    var navMain = $("#myNavbar");
+    navMain.on("click", "a", null, function () {
+        navMain.collapse('hide');
+    });
+});</script>
+
   <script>$('a[href*="#"]')
       // Remove links that don't actually link to anything
       .not('[href="#"]')

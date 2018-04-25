@@ -13,10 +13,10 @@ display: inline-block;
 
 .nav{
 
-  height: 64px;
+  //height: 64px;
   background-color: rgba(0, 0, 0, 0.8);
 
-  z-index: 999;
+  z-index: 998;
   padding-top: 0px;
 
 
@@ -47,6 +47,21 @@ display: inline-block;
 
   }
 
+}
+
+#myNavbar{
+  text-align: center;
+  background-color: #ffffff00;
+  ul{
+    li{
+      font-size: 20px;
+    }
+  }
+}
+
+
+.navbar-toggle{
+ z-index: 999;
 }
 
 
@@ -97,6 +112,7 @@ height: 100vh;
   text-align: center;
   vertical-align: middle;
   color: white;
+  font-family: 'Lato', sans-serif;
   
 }
 .btn-default{
@@ -108,9 +124,24 @@ height: 100vh;
   color: white;
 }
 
+.social{
+  margin-right:10px;
+  margin-left:10px;
+  max-height: 26px;
 
+}
 
-select option [disabled] { color: blue; }
+.col-centered{
+  display:inline-block;
+  float:none;
+
+}
+.row-centered {
+  text-align:center;
+}
+.row-spacer{
+  margin-top: 20px;
+}
 
 
 .form-control::placeholder{
@@ -148,8 +179,17 @@ padding-left: 3%;
   }
 }
 
+
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+
+
 .thinlink{
   font-weight: 200;
+  font-family: 'Lato', sans-serif;
   a {
     color: #333333;
 }
@@ -157,6 +197,7 @@ padding-left: 3%;
 a:hover{
   text-decoration: none;
 }
+
 
   
 }
@@ -198,6 +239,16 @@ p{
 }
 }
 
+.end-link{
+  font-weight: 200;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  a {
+    color: #ffffff;
+
+}
+}
+
 .about{
   h2{
     font-family: 'Lato', sans-serif;
@@ -221,11 +272,14 @@ height: 200px;
   h2{
     color: white;
     font-weight: 200;
+    font-family: 'Lato', sans-serif;
   }
   p{
     color:white;
+    font-family: 'Lato', sans-serif;
   }
-  h4{color: white;}
+  h4{color: white;
+    font-family: 'Lato', sans-serif;}
   img{
     width: auto;
     height: 100px;
